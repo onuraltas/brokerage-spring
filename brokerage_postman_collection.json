@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "517d88ef-598a-4ad9-8a01-e7dd4463ba64",
+		"name": "Brokage Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33028019"
+	},
+	"item": [
+		{
+			"name": "rest/login - onur",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"onur@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/rest/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"rest",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest/login - merve",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"merve@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/rest/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"rest",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest/login - ali",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ali@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/rest/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"rest",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest/order/buy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbnVyQGdtYWlsLmNvbSIsImV4cCI6MTc0MjczNjA1NX0.knxzCv0uUtZS846PcuXjxJgEiOc_GMUpJ8tlRsaDNxGOvwryJbRYt89D_pwwahWONUs_N5WC_bVj1Jn58SvdhQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"assetName\": \"USD\",\r\n    \"size\": 4,\r\n    \"price\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/rest/order/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"rest",
+						"order",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest/order/sell",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtZXJ2ZUBnbWFpbC5jb20iLCJleHAiOjE3NDI4MDEzNjN9.sClPkLr-Gw5ZdjY4rRd4b4kV0haWISuoIBbRI939OPLyVu2btjPyzoM8dVVJ1lyyu0tfrF273Did_n92qd0_VA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"assetName\": \"USD\",\r\n    \"size\": 4,\r\n    \"price\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/rest/order/sell",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"rest",
+						"order",
+						"sell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest/order/cancel/{orderId}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbnVyQGdtYWlsLmNvbSIsImV4cCI6MTc0MjczNjA1NX0.knxzCv0uUtZS846PcuXjxJgEiOc_GMUpJ8tlRsaDNxGOvwryJbRYt89D_pwwahWONUs_N5WC_bVj1Jn58SvdhQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:80/rest/order/cancel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"rest",
+						"order",
+						"cancel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest/order/{customerId}/{startDate}/{endDate}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbnVyQGdtYWlsLmNvbSIsImV4cCI6MTc0MjgxMjA2Mn0.vczPdVDZPkmSYT0mY_8c3ELAmxrVB6j3Fqj9g7JfGBVnKp2f83L-OLj1S0PEeZinjVHQJVAAdg410wwRP3ek4g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:80/rest/order/1/2025-03-23/2025-03-23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"rest",
+						"order",
+						"1",
+						"2025-03-23",
+						"2025-03-23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rest/asset/customer/{customerId}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbnVyQGdtYWlsLmNvbSIsImV4cCI6MTc0MjgyMzAzOX0.9bFtwvKuZkVn1zoS3KYZtHuzHoPgzOpIxA4dgvU9iBnMLh9lKD7qLDH50gJ_rsVHD9UzuOlPLOiXhfG4xw6SUQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:80/rest/asset/customer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"rest",
+						"asset",
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

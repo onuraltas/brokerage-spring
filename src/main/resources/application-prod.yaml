@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: "brokage-prod"
+  datasource:
+    url: jdbc:h2:mem:prod
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+      javax:
+        persistence:
+          validation:
+            mode: none
+
+server:
+  port: 80
+
+tokenSecret:
+  iEQlMJR858sWj1MLeIKB115gdL50dshhdMioXKl3oOnQ21HRTzurrW3rjpmdiTgg
