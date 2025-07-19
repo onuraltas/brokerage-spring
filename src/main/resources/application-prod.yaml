@@ -1,6 +1,6 @@
 spring:
   application:
-    name: "brokage-prod"
+    name: "brokerage-prod"
   datasource:
     url: jdbc:h2:mem:prod
     driverClassName: org.h2.Driver

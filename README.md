@@ -1,4 +1,4 @@
-# brokage-app
+# brokerage-app
 
 ------------------------------------------------------------------------------------------
 
@@ -14,11 +14,11 @@ mvn spring-boot:run
 2) Java Command
 ./mvnw clean install
 cd target
-java -jar .\brokage-1.0.0.jar
+java -jar .\brokerage-1.0.0.jar
 
 3) Docker Container
 mvn compile jib:dockerBuild
-docker run -p 80:80 brokage:latest
+docker run -p 80:80 brokerage:latest
 
 ------------------------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ Endpoints can be seen with swagger.
 
 http://localhost/swagger-ui/index.html
 
-Postman collection is provided as a json file. (brokage_postman_collection.json)
+Postman collection is provided as a json file. (brokerage_postman_collection.json)
 
 3 different user logins are provided with collection.
 
